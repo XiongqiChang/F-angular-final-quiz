@@ -8,6 +8,8 @@ import { TrainersComponent } from './trainers/trainers.component';
 import { TrainerComponent } from './trainer/trainer.component';
 import { TraineesComponent } from './trainees/trainees.component';
 import { TraineeComponent } from './trainee/trainee.component';
+import { GroupsComponent } from './groups/groups.component';
+import { GroupComponent } from './group/group.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { TraineeComponent } from './trainee/trainee.component';
     TrainersComponent,
     TrainerComponent,
     TraineesComponent,
-    TraineeComponent
+    TraineeComponent,
+    GroupsComponent,
+    GroupComponent
   ],
   imports: [
     BrowserModule,

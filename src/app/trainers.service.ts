@@ -12,5 +12,11 @@ export class TrainersSerice{
 
     getTrainers(): Observable<Trainer[]> {
         return this.httpclient.get<Trainer[]>('http://localhost:8080/trainers?grouped=false');
-      }
+    }
+    
+
+    addTrainer(name: String): Observable<Trainer>{
+        return this.httpclient.post<Trainer>('http://localhost:8080//trainers',null);
+    }
+        
  } 

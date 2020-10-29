@@ -17,4 +17,8 @@ export class TraineesComponent implements OnInit {
     this.traineesService.getTrainees().subscribe(trainees => this.trainees = trainees);
   }
 
+  addTrainer(): void{
+    
+  }
+
 }

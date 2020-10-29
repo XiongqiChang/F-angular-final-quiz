@@ -1,0 +1,7 @@
+<div>
+    <h2>分组列表</h2> 
+    <button (click)="autoGroup()">+分组学员</button>
+    <table>
+        <app-group *ngFor="let group of groups" [group]="group"></app-group>
+    </table>
+</div>

@@ -12,5 +12,9 @@ export class TraineeSerice{
 
     getTrainees(): Observable<Trainee[]> {
         return this.httpclient.get<Trainee[]>('http://localhost:8080/trainees?grouped=false');
-      }
+    }
+    
+    addTrainee(name: String): Observable<Trainee>{
+        return this.httpclient.post<Trainee>('http://localhost:8080//trainees',null);
+    }
  } 
