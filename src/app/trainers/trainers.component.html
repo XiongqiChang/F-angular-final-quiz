@@ -1,8 +1,5 @@
-<p>trainers works!</p>
+<h2>讲师列表</h2>
 <table>
-    <tr>
-      <th>ID</th>
-      <th>Name</th>
-    </tr>
-    <app-student *ngFor="let trainer of trainers" [trainer]="trainer" (selected)="selected = $event"></app-student>
-  </table>
+    <app-trainer *ngFor="let trainer of trainers" [trainer]="trainer"></app-trainer>
+    <button>添加讲师</button>
+</table>
