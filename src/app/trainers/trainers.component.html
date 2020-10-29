@@ -1,0 +1,8 @@
+<p>trainers works!</p>
+<table>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+    </tr>
+    <app-student *ngFor="let trainer of trainers" [trainer]="trainer" (selected)="selected = $event"></app-student>
+  </table>
