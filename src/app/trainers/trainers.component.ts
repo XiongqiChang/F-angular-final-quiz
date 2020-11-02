@@ -13,7 +13,7 @@ export class TrainersComponent implements OnInit {
   constructor(private trainersService: TrainersSerice) { }
 
   ngOnInit(): void {
-    this.trainersService.getTrainers().subscribe(trainer => this.trainers = trainer);
+    this.trainersService.getTrainers().subscribe(trainer => this.trainers = trainer); // TODO GTB-4: - 回调函数入参命名不正确
   }
 
 }
